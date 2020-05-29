@@ -30,7 +30,7 @@ public class BossbarManager {
                 double progress = add;
                 for (int i = 1; i <= settings.getPvpTime(); i++) {
                     String actualTitle = Utils.replaceTime(title, i);
-                    BossBar bar = Bukkit.createBossBar(actualTitle, BarColor.RED, BarStyle.SOLID);
+                    BossBar bar = Bukkit.createBossBar(actualTitle, BarColor.YELLOW, BarStyle.SOLID);
                     bar.setProgress(progress);
                     progress += add;
                     bossBars.put(i, bar);
